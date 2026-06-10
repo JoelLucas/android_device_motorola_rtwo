@@ -11,9 +11,6 @@ include device/motorola/sm8550-common/BoardConfigCommon.mk
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := rtwo
 
-# Display
-TARGET_SCREEN_DENSITY := 400
-
 # Kernel
 TARGET_KERNEL_CONFIG += \
 	vendor/ext_config/moto-kalama-rtwo.config

@@ -3,12 +3,8 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
-
 # Screen
-TARGET_SCREEN_DENSITY := 400
+TARGET_SCREEN_DENSITY := 450
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
@@ -112,3 +108,4 @@ ODM_MANIFEST_NP_FILES := \
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/motorola/rtwo/rtwo-vendor.mk)
+
