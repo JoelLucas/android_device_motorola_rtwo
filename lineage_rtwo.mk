@@ -29,7 +29,7 @@ PRODUCT_NAME := lineage_rtwo
 PRODUCT_DEVICE := rtwo
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := motorola edge 40 pro
+PRODUCT_MODEL := edge 40 pro
 
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
