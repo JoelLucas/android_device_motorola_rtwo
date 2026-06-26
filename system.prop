@@ -5,15 +5,25 @@ ro.surface_flinger.set_display_power_timer_ms=1000
 
 # Performance
 ro.hwui.use_hint_manager=true
+ro.hwui.render_ahead=2
 
 # LMKD
 ro.lmk.kill_heaviest_task=true
 
-# Dex2oat
-dalvik.vm.dex2oat-cpu-set=4,5,6,7
-dalvik.vm.dex2oat-threads=4
-dalvik.vm.image-dex2oat-cpu-set=4,5,6,7
-dalvik.vm.image-dex2oat-threads=4
+# Dex2oat (SM8550 optimized)
+dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.dex2oat-cpu-set=3,4,5,6
+dalvik.vm.dex2oat-threads=5
+dalvik.vm.image-dex2oat-cpu-set=3,4,5,6
+dalvik.vm.image-dex2oat-threads=5
 
 # HWUI
 debug.hwui.target_cpu_time_percent=30
+
+# Dalvik
+dalvik.vm.heapstartsize=16m
+dalvik.vm.heapgrowthlimit=256m
+dalvik.vm.heapsize=512m
+dalvik.vm.heaptargetutilization=0.6
+dalvik.vm.heapminfree=8m
+dalvik.vm.heapmaxfree=32m
