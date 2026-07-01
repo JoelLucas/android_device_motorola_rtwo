@@ -10,8 +10,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from rtwo device
 $(call inherit-product, device/motorola/rtwo/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common PixelOS stuff.
+$(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
@@ -19,13 +19,11 @@ TARGET_SCREEN_WIDTH := 1080
 
 # Build flags
 WITH_GMS := true
-TARGET_SUPPORT_BOOT_ANIMATIONS := true
 TARGET_ENABLE_BLUR := true
-TARGET_HAS_UDFPS := true
 PRODUCT_NO_CAMERA := true
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_rtwo
+PRODUCT_NAME := custom_rtwo
 PRODUCT_DEVICE := rtwo
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
